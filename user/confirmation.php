@@ -4,10 +4,10 @@ include "../constant.php";
 
 //$id=$_GET["id"];
 $url = $URL . "registration/read_profile_by_id.php";
-$transaction_id = $_SESSION['transaction_id'];
-// $transaction_id="pay_LilZYcc1IDUOnM";
-$id = $_SESSION['user_id'];  
-// $id='78';
+// $transaction_id = $_SESSION['transaction_id'];
+$transaction_id="pay_123";
+// $id = $_SESSION['user_id'];  
+$id='4';
 $data = array("id" => $id);
 $postdata1 = json_encode($data);
 $result = giplCurl($url, $postdata1);
