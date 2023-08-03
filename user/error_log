@@ -1,0 +1,152 @@
+[09-Jul-2023 11:46:40 Asia/Kolkata] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home2/glintqnj/krishilimited.com/user/payment.php on line 167
+[09-Jul-2023 11:46:54 Asia/Kolkata] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home2/glintqnj/krishilimited.com/user/payment.php on line 167
+[09-Jul-2023 11:50:38 Asia/Kolkata] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home2/glintqnj/krishilimited.com/user/payment.php on line 167
+[09-Jul-2023 15:50:36 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home2/glintqnj/krishilimited.com/user/re_payment.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/glintqnj/krishilimited.com/user/re_payment.php on line 6
+[17-Jul-2023 10:23:54 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:10 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:15 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:18 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:19 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:20 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:20 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:21 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:22 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:22 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:23 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:24 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[17-Jul-2023 10:24:35 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[27-Jul-2023 11:56:09 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[27-Jul-2023 11:56:27 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[27-Jul-2023 11:56:30 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[27-Jul-2023 11:56:41 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[27-Jul-2023 11:57:01 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[27-Jul-2023 11:58:58 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[28-Jul-2023 05:43:41 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[28-Jul-2023 05:43:57 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[28-Jul-2023 05:44:41 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[28-Jul-2023 06:09:24 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in /home2/glintqnj/krishilimited.com/user/registration.php on line 4
+[28-Jul-2023 14:06:07 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[28-Jul-2023 14:06:07 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[28-Jul-2023 14:06:07 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[28-Jul-2023 14:06:07 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[28-Jul-2023 14:06:07 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[28-Jul-2023 08:43:44 UTC] PHP Warning:  include(../../constant.php): failed to open stream: No such file or directory in /home2/glintqnj/krishilimited.com/user/confirm_payment.php on line 2
+[28-Jul-2023 08:43:44 UTC] PHP Warning:  include(../../constant.php): failed to open stream: No such file or directory in /home2/glintqnj/krishilimited.com/user/confirm_payment.php on line 2
+[28-Jul-2023 08:43:44 UTC] PHP Warning:  include(): Failed opening '../../constant.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/glintqnj/krishilimited.com/user/confirm_payment.php on line 2
+[28-Jul-2023 08:43:49 UTC] PHP Warning:  include(../../constant.php): failed to open stream: No such file or directory in /home2/glintqnj/krishilimited.com/user/confirm_payment.php on line 2
+[28-Jul-2023 08:43:49 UTC] PHP Warning:  include(../../constant.php): failed to open stream: No such file or directory in /home2/glintqnj/krishilimited.com/user/confirm_payment.php on line 2
+[28-Jul-2023 08:43:49 UTC] PHP Warning:  include(): Failed opening '../../constant.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/glintqnj/krishilimited.com/user/confirm_payment.php on line 2
+[29-Jul-2023 02:23:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/Instructions.php on line 94
+[29-Jul-2023 14:14:53 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:14:53 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:14:53 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:14:53 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:14:53 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[29-Jul-2023 14:17:17 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:17:17 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:17:17 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:17:17 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:17:17 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[29-Jul-2023 14:18:01 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:18:01 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:18:01 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:18:01 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:18:01 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[29-Jul-2023 14:18:55 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:18:55 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:18:55 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:18:55 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:18:55 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[29-Jul-2023 14:19:56 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:19:56 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:19:56 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:19:56 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:19:56 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[29-Jul-2023 14:19:59 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:19:59 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:19:59 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:19:59 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:19:59 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[29-Jul-2023 14:33:12 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:33:12 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:33:12 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:33:12 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:33:12 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[29-Jul-2023 14:35:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:35:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:35:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:35:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:35:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[29-Jul-2023 14:44:34 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[29-Jul-2023 14:44:34 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[29-Jul-2023 14:44:34 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[29-Jul-2023 14:44:34 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[29-Jul-2023 14:44:34 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[01-Aug-2023 14:41:03 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[01-Aug-2023 14:41:03 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[01-Aug-2023 14:41:03 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[01-Aug-2023 14:41:03 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[01-Aug-2023 14:41:03 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[01-Aug-2023 09:16:14 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home2/glintqnj/krishilimited.com/constant.php on line 2
+[01-Aug-2023 16:33:41 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 136
+[01-Aug-2023 16:33:41 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 180
+[01-Aug-2023 16:33:41 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 227
+[01-Aug-2023 16:33:41 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 282
+[01-Aug-2023 16:33:41 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 314
+[02-Aug-2023 12:10:49 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 132
+[02-Aug-2023 12:10:49 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 176
+[02-Aug-2023 12:10:49 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 223
+[02-Aug-2023 12:10:49 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 278
+[02-Aug-2023 12:10:49 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/confirmation.php on line 310
+[02-Aug-2023 13:55:37 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 69
+[02-Aug-2023 13:55:37 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 92
+[02-Aug-2023 13:56:23 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 69
+[02-Aug-2023 13:56:23 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 92
+[02-Aug-2023 08:29:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 15
+[02-Aug-2023 08:30:21 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 15
+[02-Aug-2023 14:00:57 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/glintqnj/krishilimited.com/user/print_verify_post.php:13) in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 16
+[02-Aug-2023 14:01:58 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 69
+[02-Aug-2023 14:01:58 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 92
+[02-Aug-2023 14:02:26 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:02:26 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:03:55 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:03:55 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:04:59 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:04:59 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:05:04 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:05:04 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:05:30 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:05:30 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:14:11 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:14:11 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:15:26 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:15:26 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:16:52 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:16:52 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:19:33 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:19:33 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:24:01 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:24:01 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:25:43 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:25:43 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:26:56 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:26:56 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:29:20 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:29:20 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:31:05 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:31:05 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:34:33 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 68
+[02-Aug-2023 14:34:33 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/print_verify_post.php on line 91
+[02-Aug-2023 14:45:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 140
+[02-Aug-2023 14:45:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 184
+[02-Aug-2023 14:45:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 231
+[02-Aug-2023 14:45:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 286
+[02-Aug-2023 14:45:19 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 318
+[02-Aug-2023 14:46:14 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 140
+[02-Aug-2023 14:46:14 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 184
+[02-Aug-2023 14:46:14 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 231
+[02-Aug-2023 14:46:14 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 286
+[02-Aug-2023 14:46:14 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home2/glintqnj/krishilimited.com/user/get_final_print.php on line 318
