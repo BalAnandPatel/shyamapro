@@ -1,13 +1,17 @@
 <?php
 include '../constant.php';
 
-$full_name=$_SESSION['full_name'];
-$registration_no=$_SESSION['registration_no'];
-$exam_name=$_SESSION['exam_name'];
-$transaction_id=$_SESSION['transaction_id'];
+// $full_name=$_SESSION['full_name'];
+// $registration_no=$_SESSION['registration_no'];
+// $exam_name=$_SESSION['exam_name'];
+// $transaction_id=$_SESSION['transaction_id'];
+$full_name="MRITYUNJAY SINGH";
+$registration_no="1259644686";
+$exam_name="TEST";
+$transaction_id="pay_123";
 
 
-$url = $URL . "payment/confirm_payment.php";
+$url = $URL."payment/confirm_payment.php";
 
 $data = array("transaction_id"=>$transaction_id);
 
@@ -15,20 +19,18 @@ $data = array("transaction_id"=>$transaction_id);
 $postdata = json_encode($data);
 
 $result_payment=url_encode_Decode($url,$postdata);
-//print_r($result_payment);
+// print_r($result_payment);
 
-$date = $result_payment->records[0]->created_on;
  
 function url_encode_Decode($url,$postdata){
-    $client = curl_init($url);
+$client = curl_init($url);
 curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
 $response = curl_exec($client);
-//print_r($response);
+// print_r($response);
 return $result = json_decode($response);
 
 }
-
 
 ?>
 <!DOCTYPE html>
@@ -76,10 +78,10 @@ return $result = json_decode($response);
       <div class="container-fluid">
    
       <p> Dear <b><?php echo $full_name;  ?></b>, Thank you for the payment for examination <b><?php echo $exam_name; ?></b>. Your Registration Number :<b> <?php echo $registration_no; ?></b></p>
-<p>Your payment is <b><?php echo $_SESSION['order_status']; ?></b>. Amount for examination <b> <?php echo $exam_name; ?></b> is<b> &#8377;<?php echo $result_payment->records[0]->amount; ?></b>
-and your Transaction Id </b>:<b>&nbsp;<?php echo $result_payment->records[0]->order_id; ?></b> </p>
+<p>Your payment is <b><?php //echo $_SESSION['order_status']; ?></b>. Amount for examination <b> <?php echo $exam_name; ?></b> is<b> &#8377;<?php //echo $result_payment->records[0]->amount; ?></b>
+and your Transaction Id </b>:<b>&nbsp;<?php //echo $result_payment->records[0]->order_id; ?></b> </p>
 
-<p>Date & Time:<strong class="ml-2"><?php echo $_SESSION['trans_date']; ?></strong></p>
+<p>Date & Time:<strong class="ml-2"><?php //echo $_SESSION['trans_date']; ?></strong></p>
 
 
 

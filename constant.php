@@ -5,18 +5,18 @@ date_default_timezone_set('Asia/Kolkata');
 $BASE_URL="website/index.php";
 // website file path on server
 
-$URL="http://krishilimited.com/api/src/";
-$ADMIN_IMG_PATH="http://krishilimited.com/user/img/";
-$GALLERY_IMG_PATH="http://krishilimited.com/admin/image/gallery/";
-$GALLERY_VIDEO_PATH="http://krishilimited.com/admin/uploads/videos/";
-$GALLERY_NEWS_PATH="http://krishilimited.com/admin/uploads/news/";
+// $URL="http://krishilimited.com/api/src/";
+// $ADMIN_IMG_PATH="http://krishilimited.com/user/img/";
+// $GALLERY_IMG_PATH="http://krishilimited.com/admin/image/gallery/";
+// $GALLERY_VIDEO_PATH="http://krishilimited.com/admin/uploads/videos/";
+// $GALLERY_NEWS_PATH="http://krishilimited.com/admin/uploads/news/";
 
 // website file path on localhost
-// $URL="http://localhost/Krishilimited/krishilimitedfinal/api/src/";
-// $ADMIN_IMG_PATH="http://localhost/Krishilimited/krishilimitedfinal/user/img/";
-// $GALLERY_IMG_PATH="http://localhost/Krishilimited/krishilimitedfinal/admin/image/gallery/";
-// $GALLERY_VIDEO_PATH="http://localhost/Krishilimited/krishilimitedfinal/admin/uploads/videos/";
-// $GALLERY_NEWS_PATH="http://localhost/Krishilimited/krishilimitedfinal/admin/uploads/news/";
+$URL="http://localhost/shyamapro/api/src/"; 
+$ADMIN_IMG_PATH="http://localhost/shyamapro/user/img/";
+$GALLERY_IMG_PATH="http://localhost/shyamapro/admin/image/gallery/";
+$GALLERY_VIDEO_PATH="http://localhost/shyamapro/admin/uploads/videos/";
+$GALLERY_NEWS_PATH="http://localhost/shyamapro/admin/uploads/news/";
 
 $EXAM_NAME="UPPCL EXAMINATION";
 $HOME="website/index.php"; 

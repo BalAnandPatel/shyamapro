@@ -4,9 +4,12 @@ class Database{
   
     // specify your own database credentials
     private $host = "localhost";
-    private $db_name = "glintqnj_krishilimited";
-    private $username = "glintqnj_krishilimited";
-    private $password = "glintel@12qw";
+    // private $db_name = "glintqnj_krishilimited";
+    // private $username = "glintqnj_krishilimited";
+    // private $password = "glintel@12qw";
+    private $db_name = "krishilimited";
+    private $username = "root";
+    private $password = "root";
     public $conn;
   
     // get the database connection

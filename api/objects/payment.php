@@ -3,7 +3,7 @@
  class payment{
     private $conn;
     private $table_name = "payment";
-       private $table_name2 = "payment_details";
+    private $table_name2 = "payment_details";
     public function __construct($db){
         $this->conn = $db;
     }
@@ -64,7 +64,7 @@
 
     public function confirm_payment(){
         
-        $query = "Select order_id,tracking_id,bank_ref_no,order_status,payment_mode,card_name,status_code,amount,trans_date  from " . $this->table_name2 ." where order_id=:order_id";
+       $query = "Select order_id,tracking_id,bank_ref_no,order_status,payment_mode,card_name,status_code,amount,trans_date  from " . $this->table_name2 ." where order_id=:order_id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":order_id", $this->order_id);
 
