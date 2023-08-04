@@ -54,7 +54,7 @@
 
 
     public function read_payment_details(){
-        $query="Select order_id,tracking_id,bank_ref_no,order_status,payment_mode,card_name,status_code,amount,trans_date
+        $query="Select order_id,tracking_id,bank_ref_no,order_status,payment_mode,billing_tel,failure_message,billing_email,vault,card_name,status_code,amount,trans_date
         from " .$this->table_name2 .  " where order_id=:order_id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":order_id", $this->order_id);
@@ -64,7 +64,7 @@
 
     public function confirm_payment(){
         
-       $query = "Select order_id,tracking_id,bank_ref_no,order_status,payment_mode,card_name,status_code,amount,trans_date  from " . $this->table_name2 ." where order_id=:order_id";
+       $query = "Select order_id,tracking_id,bank_ref_no,order_status,payment_mode,billing_tel,failure_message,billing_email,vault,card_name,status_code,amount,trans_date  from " . $this->table_name2 ." where order_id=:order_id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":order_id", $this->order_id);
 

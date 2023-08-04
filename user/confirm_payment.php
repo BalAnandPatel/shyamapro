@@ -1,14 +1,15 @@
 <?php
 include '../constant.php';
+error_reporting(0);
+$full_name=$_SESSION['full_name'];
+$registration_no=$_SESSION['registration_no'];
+$exam_name=$_SESSION['exam_name'];
+$transaction_id=$_SESSION['transaction_id'];
 
-// $full_name=$_SESSION['full_name'];
-// $registration_no=$_SESSION['registration_no'];
-// $exam_name=$_SESSION['exam_name'];
-// $transaction_id=$_SESSION['transaction_id'];
-$full_name="MRITYUNJAY SINGH";
-$registration_no="1259644686";
-$exam_name="TEST";
-$transaction_id="pay_123";
+// $full_name="MRITYUNJAY SINGH";
+// $registration_no="1259644686";
+// $exam_name="TEST";
+// $transaction_id="x0Zrw_8101875477";
 
 
 $url = $URL."payment/confirm_payment.php";
@@ -27,7 +28,7 @@ $client = curl_init($url);
 curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
 $response = curl_exec($client);
-// print_r($response);
+//print_r($response);
 return $result = json_decode($response);
 
 }
@@ -65,7 +66,7 @@ return $result = json_decode($response);
       <!-- <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p> -->
       
       <h1 class="text-center text-dark">
-        <?php if(isset($_SESSION['order_status']) == "Success") { ?>
+        <?php if($result_payment->records[0]->order_status == "Success") { ?>
           <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0fdb13}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
           <h2 class="login-box-msg"><b><u>Payment Successful</u></b></h2>
         <?php } else { ?>
@@ -76,7 +77,7 @@ return $result = json_decode($response);
       <hr>
       <div class="card-body">
         <p>
-          Welcome <b><?php echo $full_name;  ?>!</b>
+          Welcome! <b><?php echo $full_name;  ?></b>
         </p>
         <div class="table-responsive">
 
@@ -97,27 +98,35 @@ return $result = json_decode($response);
               </tr>
               <tr>
                 <td class="col-6">Transaction Reference Id</td>
-                <td></td>
+                <td><?php echo $result_payment->records[0]->tracking_id; ?></td>
               </tr>
               <tr>
                 <td class="col-6">Transaction Number</td>
-                <td><?php //echo $result_payment->records[0]->order_id; ?></td>
+                <td><?php echo $result_payment->records[0]->order_id; ?></td>
               </tr>
               <tr>
-                <td class="col-6">Reference Id</td>
-                <td></td>
+                <td class="col-6">Bank Reference Number</td>
+                <td><?php echo $result_payment->records[0]->bank_ref_no; ?></td>
+              </tr>
+              <tr>
+                <td class="col-6">Card Name</td>
+                <td><?php echo $result_payment->records[0]->card_name; ?></td>
+              </tr>
+              <tr>
+                <td class="col-6">Payment Mode</td>
+                <td><?php echo $result_payment->records[0]->payment_mode; ?></td>
               </tr>
               <tr>
                 <td class="col-6">Date of Transaction</td>
-                <td><?php //echo $_SESSION['trans_date']; ?></td>
+                <td><?php echo $result_payment->records[0]->trans_date; ?></td>
               </tr>
               <tr>
                 <td class="col-6">Transaction Amount</td>
-                <td><?php //echo $result_payment->records[0]->amount; ?></td>
+                <td><?php echo $result_payment->records[0]->amount; ?></td>
               </tr>
               <tr>
                 <td class="col-6">Transaction Status</td>
-                <td><?php //echo $_SESSION['order_status']; ?></td>
+                <td><?php echo $result_payment->records[0]->order_status; ?></td>
               </tr>
             </tbody>
           </table>
