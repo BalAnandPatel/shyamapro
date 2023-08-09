@@ -265,7 +265,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
                 <span class="fas fa-envelope"></span>
               </div>
 
-              <input type="text" class="form-control" placeholder="Email" name="email" autocomplete="off"   data-toggle="tooltip" title="Please Enter Email">         
+              <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off"   data-toggle="tooltip" title="Please Enter Email">         
          
             </div>
           </div>
