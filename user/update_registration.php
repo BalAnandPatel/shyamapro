@@ -140,13 +140,13 @@ function giplCurl($api,$postdata){
   <div class="row">
           <div class="col-sm-6">
           <div class="form-group">
-  <label for="input">Date of Birth (dd-mm-yyyy)</label>
+  <label for="input">Date of Birth</label>
 
           <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-calendar"></span>
               </div>
-            <input type="text" class="form-control" value="<?php echo date("d-m-Y", strtotime($value1->dob)) ?>"  name="dob"  placeholder="Date Of Birth"  autocomplete="off" required>         
+            <input type="date" class="form-control" value="<?php echo date("Y-m-d", strtotime($value1->dob)) ?>"  name="dob"  placeholder="Date Of Birth"  autocomplete="off" required>         
 
             </div>
           </div>
@@ -160,7 +160,13 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
               </div>
-            <input type="text" class="form-control"  value="<?php echo $value1->gender ?>" name="gender"  placeholder="Gender" autocomplete="off" required>         
+            <!-- <input type="text" class="form-control"  value="<?php //echo $value1->gender ?>" name="gender"  placeholder="Gender" autocomplete="off" required>          -->
+            <select class="form-control" name="gender" required>
+             <option class="form-control" value="<?php echo $value1->gender ?>" selected disabled><?php echo $value1->gender ?></option>
+             <option class="form-control" value="Male">Male</option>
+             <option class="form-control" value="Female">Female</option>
+             <option class="form-control" value="Other">Other</option>
+            </select>
           </div>
           </div>
             </div>
@@ -178,9 +184,13 @@ function giplCurl($api,$postdata){
                 <span class="fas fa-boxes"></span>
               </div>
 
-              <input type="text" class="form-control"  placeholder="Marital Status" name="marital_status"   value="<?php echo $value1->marital_status ?>"  autocomplete="off" required>         
-
-                      </div>
+              <!-- <input type="text" class="form-control"  placeholder="Marital Status" name="marital_status"   value="<?php //echo $value1->marital_status ?>"  autocomplete="off" required>          -->
+            <select class="form-control" name="marital_status" required>
+              <option class="form-control" value="<?php echo $value1->marital_status ?>" selected disabled><?php echo $value1->marital_status ?></option>
+              <option class="form-control" value="Married">Married</option>
+              <option class="form-control" value="Unmarried">Unmarried</option>
+            </select>
+            </div>
           </div>
             </div>
 
@@ -254,7 +264,7 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-phone"></span>
               </div>
-               <input type="number" minlength="10" class="form-control"  placeholder="Mobile" name="mobile"   value="<?php echo $value1->mobile ?>" autocomplete="off" required>         
+               <input type="text" minlength="10" maxlength="10" class="form-control"  placeholder="Mobile" name="mobile"   value="<?php echo $value1->mobile ?>" autocomplete="off" required>         
 
          
             </div>
@@ -273,7 +283,7 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-home"></span>
               </div>
-               <input type="text" class="form-control"  placeholder="Correspondance Address" name="cor_address"   value="<?php echo $value1->cor_address ?>" autocomplete="off" >         
+               <input type="text" class="form-control"  placeholder="Correspondance Address" name="cor_address"   value="<?php echo $value1->cor_address ?>" autocomplete="off" required>         
               
             </div>
           </div>
@@ -316,7 +326,7 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-home"></span>
               </div>
-               <input type="text" class="form-control"  placeholder="Address 3" name="address3"   value="<?php echo $value1->address3 ?>" autocomplete="off">         
+               <input type="text" class="form-control"  placeholder="Address 3" name="address3"   value="<?php echo $value1->address3 ?>" autocomplete="off" required>         
        
             </div>
           </div>
@@ -347,7 +357,7 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-map-pin"></span>
               </div>
-               <input type="number" minlength="6" class="form-control"  placeholder="Pincode"  name="pincode"  value="<?php echo $value1->pincode ?>" autocomplete="off" required>                  
+               <input type="text" minlength="6" maxlength="6" class="form-control"  placeholder="Pincode"  name="pincode"  value="<?php echo $value1->pincode ?>" autocomplete="off" required>                  
 
              
             </div>
@@ -369,8 +379,46 @@ function giplCurl($api,$postdata){
                 <span class="fas fa-map-pin"></span>
               </div>
               
-               <input type="text" class="form-control"  placeholder="State" name="state"   value="<?php echo $value1->state ?>" autocomplete="off" required>                  
-         
+               <!-- <input type="text" class="form-control"  placeholder="State" name="state"   value="<?php //echo $value1->state ?>" autocomplete="off" required>                   -->
+               <select class="form-control" name="state" required>
+                <option value="<?php echo $value1->state ?>" selected disabled><?php echo $value1->state ?></option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
             </div>
           </div>
             </div>
@@ -383,8 +431,15 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-               <input type="text" class="form-control"  placeholder="Category" name="category"   value="<?php echo $value1->category ?>" autocomplete="off" required>                  
-          
+               <!-- <input type="text" class="form-control"  placeholder="Category" name="category"   value="<?php //echo $value1->category ?>" autocomplete="off" required>                   -->
+               <select class="form-control" name="category" required>
+                <option class="form-control" value="<?php echo $value1->category ?>" selected disabled><?php echo $value1->category ?></option>
+                <option class="form-control" value="General">General</option>
+                <option class="form-control" value="OBC">OBC</option>
+                <option class="form-control" value="SC">SC</option>
+                <option class="form-control" value="ST">ST</option>
+                <option class="form-control" value="EWS">EWS</option>
+              </select>
             </div>
           </div>
             </div>
@@ -399,8 +454,14 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
               </div>
-               <input type="text" class="form-control"  placeholder="Religion" name="religion"   value="<?php echo $value1->religion ?>" autocomplete="off" required>                  
-                      
+               <!-- <input type="text" class="form-control"  placeholder="Religion" name="religion"   value="<?php //echo $value1->religion ?>" autocomplete="off" required> -->
+               <select class="form-control" name="religion" required>
+                <option class="form-control" value="<?php echo $value1->religion ?>" selected disabled><?php echo $value1->religion ?></option>
+                <option class="form-control" value="Hindu">Hindu</option>
+                <option class="form-control" value="Muslim">Muslim</option>
+                <option class="form-control" value="Sikh">Sikh</option>
+                <option class="form-control" value="Christian">Christian</option>
+              </select>
             </div>
           </div>
             </div>
@@ -430,7 +491,7 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-phone"></span>
               </div>
-             <input type="text" class="form-control"  placeholder=" Alternate Mobile"   name="alternate_mobile" value="<?php echo $value1->alternate_mobile ?>" autocomplete="off" >                  
+             <input type="text" minlength="10" maxlength="10" class="form-control"  placeholder=" Alternate Mobile"   name="alternate_mobile" value="<?php echo $value1->alternate_mobile ?>" autocomplete="off" >                  
             
             </div>
           </div>
@@ -450,8 +511,19 @@ function giplCurl($api,$postdata){
             <div class="input-group-text">
               <span class="fas fa-boxes"></span>
             </div>
-         <input type="text" class="form-control"  placeholder="Highest Qualification" name="h_qualification"   value="<?php echo $value1->h_qualification ?>" autocomplete="off" required>                  
-         
+         <!-- <input type="text" class="form-control"  placeholder="Highest Qualification" name="h_qualification"   value="<?php echo $value1->h_qualification ?>" autocomplete="off" required> -->
+          <select class="form-control" name="h_qualification" required>
+            <option class="form-control" value="<?php echo $value1->h_qualification ?>" selected disabled><?php echo $value1->h_qualification ?></option>
+            <option class="form-control" value="Ph.D">Ph.D</option>
+            <option class="form-control" value="Diploma">Diploma</option>
+            <option class="form-control" value="Post Graduation">Post Graduation</option>
+            <option class="form-control" value="Under Graduation">Under Graduation</option>
+            <option class="form-control" value="Senior Secondary">Senior Secondary</option>
+            <option class="form-control" value="Higher Secondary">Higher Secondary</option>
+            <option class="form-control" value="Class 8th">Class 8th</option>
+            <option class="form-control" value="Class 5th">Class 5th</option>
+            <option class="form-control" value="Other">Other</option>
+          </select>
       </div></div></div>
 
 
@@ -475,7 +547,7 @@ function giplCurl($api,$postdata){
     <div class="input-group-text">
       <span class="fas fa-calendar"></span>
     </div>
-    <input type="text" class="form-control"  placeholder="Passing Date" name="passing_date"   value="<?php echo date("d-m-Y", strtotime($value1->passing_date)) ?>" autocomplete="off" required>                  
+    <input type="date" class="form-control"  placeholder="Passing Date" name="passing_date"   value="<?php echo date("Y-m-d", strtotime($value1->passing_date)) ?>" autocomplete="off" required>                  
   
           </div>
         </div>
@@ -503,7 +575,13 @@ function giplCurl($api,$postdata){
               <span class="fas fa-graduation-cap"></span>
             </div>
           
-            <input type="text" class="form-control"  placeholder="Grade " name="grade"  value="<?php echo $value1->grade ?>" autocomplete="off" required>                  
+            <!-- <input type="text" class="form-control"  placeholder="Grade " name="grade"  value="<?php //echo $value1->grade ?>" autocomplete="off" required> -->
+            <select class="form-control" name="grade" required>
+         <option class="form-control" value="<?php echo $value1->grade ?>" selected disabled><?php echo $value1->grade ?></option>
+         <option class="form-control" value="First">First</option>
+             <option class="form-control" value="Second">Second</option>
+             <option class="form-control" value="Third">Third</option>
+         </select>
 
 </div></div></div>
 <div class="col-sm-6">
@@ -515,8 +593,13 @@ function giplCurl($api,$postdata){
               <span class="fas fa-language"></span>
             </div>
           
-            <input type="text" class="form-control"  placeholder="Language "  name="languages"  value="<?php echo $value1->languages ?>" autocomplete="off" required>                  
-
+            <!-- <input type="text" class="form-control"  placeholder="Language "  name="languages"  value="<?php //echo $value1->languages ?>" autocomplete="off" required> -->
+            <select class="form-control" name="languages" required>
+             <option class="form-control" value="<?php echo $value1->languages ?>" selected disabled><?php echo $value1->languages ?></option>
+             <option class="form-control" value="Hindi">Hindi</option>
+             <option class="form-control" value="English">English</option>
+             <option class="form-control" value="Other">Other</option>
+         </select>
         </div>
           </div>
 </div>
@@ -531,8 +614,12 @@ function giplCurl($api,$postdata){
               <span class="fas fa-book"></span>
             </div>
          
-            <input type="text" class="form-control"  placeholder=" Are You Able To Read?"  name="is_read"  value="<?php echo $value1->is_read ?>" autocomplete="off" required>                  
-
+            <!-- <input type="text" class="form-control"  placeholder=" Are You Able To Read?"  name="is_read"  value="<?php //echo $value1->is_read ?>" autocomplete="off" required>                   -->
+          <select class="form-control" name="read" required>
+            <option class="form-control" value="<?php echo $value1->is_read ?>" selected disabled><?php echo $value1->is_read ?></option>
+            <option class="form-control" value="Yes">Yes</option>
+            <option class="form-control" value="No">No</option>
+          </select>
         </div></div></div>
 
          <div class="col-sm-6">
@@ -542,8 +629,12 @@ function giplCurl($api,$postdata){
             <div class="input-group-text">
               <span class="fas fa-pen"></span>
             </div>
-            <input type="text" class="form-control"  placeholder="Are You Able To Write? " name ="is_write"   value="<?php echo $value1->is_write ?>" autocomplete="off" required>                  
-
+            <!-- <input type="text" class="form-control"  placeholder="Are You Able To Write? " name ="is_write"   value="<?php //echo $value1->is_write ?>" autocomplete="off" required>                   -->
+            <select class="form-control" name="write" required>
+         <option class="form-control" value="<?php echo $value1->is_write ?>" selected disabled><?php echo $value1->is_write ?></option>
+         <option class="form-control" value="Yes">Yes</option>
+             <option class="form-control" value="No">No</option>
+         </select>
         </div>
           </div></div></div>
       
@@ -555,8 +646,12 @@ function giplCurl($api,$postdata){
             <div class="input-group-text">
               <span class="fas fa-microphone"></span>
             </div>
-            <input type="text" class="form-control"  placeholder=" Are You Able To Speak?" name="is_speak"   value="<?php echo $value1->is_speak ?>" autocomplete="off" required>                  
-
+            <!-- <input type="text" class="form-control"  placeholder=" Are You Able To Speak?" name="is_speak"   value="<?php //echo $value1->is_speak ?>" autocomplete="off" required> -->
+            <select class="form-control" name="speak" required>
+         <option class="form-control" value="<?php echo $value1->is_speak ?>" selected disabled><?php echo $value1->is_speak ?></option>
+         <option class="form-control" value="Yes">Yes</option>
+             <option class="form-control" value="No">No</option>
+         </select>
         </div></div></div>
         <div class="col-sm-6">
           <div class="form-group">
@@ -565,8 +660,12 @@ function giplCurl($api,$postdata){
     <div class="input-group-text">
       <span class="fas fa-wheelchair"></span>
     </div>
-  <input type="text" class="form-control"  placeholder=" Disability Category?" name="disability_cat"   value="<?php echo $value1->disability_cat ?>" autocomplete="off" >                  
-
+  <!-- <input type="text" class="form-control"  placeholder=" Disability Category?" name="disability_cat"   value="<?php //echo $value1->disability_cat ?>" autocomplete="off" >                   -->
+  <select class="form-control" name="disability_cat" required>
+         <option class="form-control" value="<?php echo $value1->disability_cat ?>" selected disabled><?php echo $value1->disability_cat ?></option>
+         <option class="form-control" value="Yes">Yes</option>
+             <option class="form-control" value="No">No</option>
+         </select>
 </div></div></div></div>
 
 <div class="row">    
@@ -588,8 +687,12 @@ function giplCurl($api,$postdata){
     <div class="input-group-text">
       <span class="fas fa-spinner"></span>
     </div>
-          <input type="text" class="form-control"  placeholder="Are you Ex-Serviceman? "  name="ex_serviceman"  value="<?php echo $value1->ex_serviceman ?>" autocomplete="off" >                  
-
+          <!-- <input type="text" class="form-control"  placeholder="Are you Ex-Serviceman? "  name="ex_serviceman"  value="<?php //echo $value1->ex_serviceman ?>" autocomplete="off" >                   -->
+          <select class="form-control" name="ex_serviceman">
+         <option class="form-control" value="<?php echo $value1->ex_serviceman ?>" selected disabled><?php echo $value1->ex_serviceman ?></option>
+         <option class="form-control" value="No">No</option>
+         <option class="form-control" value="Yes">Yes</option>
+         </select>
 </div></div></div></div>
 
 <div class="row">    
@@ -601,8 +704,12 @@ function giplCurl($api,$postdata){
     <div class="input-group-text">
       <span class="fas fa-user"></span>
     </div>
-     <input type="text" class="form-control"  placeholder=" Are you Serving Defence Personnel?"  name="serving_defence_per"  value="<?php echo $value1->serving_defence_per ?>" autocomplete="off" >                  
-
+     <!-- <input type="text" class="form-control"  placeholder=" Are you Serving Defence Personnel?"  name="serving_defence_per"  value="<?php //echo $value1->serving_defence_per ?>" autocomplete="off" >                   -->
+     <select class="form-control" name="serving_defence_per" required>
+         <option class="form-control" value="<?php echo $value1->serving_defence_per ?>" selected disabled><?php echo $value1->serving_defence_per ?></option>
+         <option class="form-control" value="No">No</option>
+         <option class="form-control" value="Yes">Yes</option>  
+         </select>
 </div></div></div>
 <div class="col-sm-6">
           <div class="form-group">
