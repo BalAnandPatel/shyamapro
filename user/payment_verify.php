@@ -1,6 +1,6 @@
 <?php
 include '../constant.php';  
-// error_reporting(0);
+error_reporting(0);
 $mobile = $_POST["mobile"];
 $registration_no = $_POST["registration_no"];
 //$date=$_POST["dob"];
@@ -95,9 +95,6 @@ function giplCurl($api, $postdata)
 
             <p> Dear <b><?php echo $results->records[0]->full_name;  ?></b>, Thank you for the registration for examination : <b><?php echo $results->records[0]->exam_name; ?></b>. Your Registration Number is :<b> <?php echo $results->records[0]->registration_no; ?></b></p>
             <p>Your Registration Amount for examination :<b> <?php echo $results->records[0]->exam_name; ?></b> is<b> &#8377;<?php echo $results->records[0]->amount; ?></b> only. </p>
-
-
-
 
             <h1>Instructions:</h1>
             <ul>

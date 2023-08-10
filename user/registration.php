@@ -26,7 +26,6 @@ $exam_name = $_POST['exam_name'];
 }else{
   header('location:Instructions.php');
   }
-// >>>>>>> ada6cf57e748114254cac19da67e9faa667a4d5a
 ?>
 <script>
 function getFileData(object){
@@ -267,6 +266,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
                 <span class="fas fa-envelope"></span>
               </div>
 
+              <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off"   data-toggle="tooltip" title="Please Enter Email">         
               <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off" required data-toggle="tooltip" title="Please Enter Email">         
          
             </div>
