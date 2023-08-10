@@ -691,7 +691,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
     <div class="input-group-text">
       <span class="fas fa-spinner"></span>
     </div>
-         <select class="form-control" name="ex_serviceman">
+         <select class="form-control" name="ex_serviceman" required>
          <option class="form-control" value="No">No</option>
          <option class="form-control" value="Yes">Yes</option>
              
@@ -714,14 +714,14 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
 </div></div></div>
 <div class="col-sm-12 col-md-6">
           <div class="form-group">
-  <label for="input">Service Period (In month)<sup>&#9733;</sup></label>
+  <label for="input">Service Period (In month)</label>
 
   <div class="input-group-append">
     <div class="input-group-text">
       <span class="fas fa-clock"></span>
     </div>
  
-  <input type="number" class="form-control" placeholder="Service Period of Serving Defence Personnel" name="service_period" autocomplete="off">
+  <input type="number" class="form-control" value="0" placeholder="Service Period of Serving Defence Personnel" name="service_period" autocomplete="off">
   </div></div></div>
 </div>
   
