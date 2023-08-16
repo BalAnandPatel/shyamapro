@@ -60,7 +60,7 @@
                         <li class="font_size"><a class="font_size" href="about.php">About</a></li>
                         <li class="font_size"><a class="font_size" href="service.php">Services</a></li>
                         <!-- <li class="font_size"><a class="font_size" href="blog_details_agriculture.php">Blogs</a></li> -->
-                        <li class="font_size"><a class="font_size" href="contactmin.php">Contact Us</a></li>
+                        <!-- <li class="font_size"><a class="font_size" href="contactmin.php">Contact Us</a></li> -->
 
                         <li class="font_size"><a class="font_size" href="cancelreturn.php">Cancel Return</a></li>
                         <li class="font_size"><a class="font_size" href="shipping.php">Shipping</a></li>

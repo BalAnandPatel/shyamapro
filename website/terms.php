@@ -1,29 +1,55 @@
 <?php include "include/headerr.php"; ?>
+    <!--------banner-------->
 
-        <div class="stricky-header stricked-menu main-menu">
-            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
-        </div><!-- /.stricky-header -->
+    <section class="content">
 
-        <!--Page Header Start-->
-        <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
-            </div>
-            <div class="container">
-                <div class="page-header__inner">
-                    <ul class="thm-breadcrumb list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><span>/</span></li>
-                        <li>Terms & Conditions</li>
-                    </ul>
-                    <h2>Terms & Condition</h2>
+        <div class="banner_slider banner_slider_one">
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                         <img alt="banner" src="assets/images/banner/breadcrumb-banner-1.jpg" style="width:100%">
+
+                    </div>
+
                 </div>
-            </div>
-        </section>
-        <!--Page Header End-->
 
-        <!--Project Details Start-->
-        <section class="project-details">
-            <div class="container">
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!------banner end-------------->
+    <!---breadcrumb----->
+
+    <a id="skiptomain"></a>
+
+</div>
+
+
+<!--Project Details Start-->
+<section class="">
+    <div class="container">
+        
+    <div class="">
+        <nav class="breadcrumb1" aria-label="breadcrumb">
+            <ol class="breadcrumb font_size">
+                <li class="breadcrumb-item">
+                    <a href="index.php">
+                        <img alt="homeIcon" src="assets/images/social/home-icon2.png" class="homeIcon">Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item font_size active" aria-current="page">Terms and Conditions</li>
+
+            </ol>
+        </nav>
+    </div>
                 <div class="project-details__content">
                     <div class="row">
                         <div class="col-xl-12 col-lg-8 mb-5">

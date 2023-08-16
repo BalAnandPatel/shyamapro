@@ -50,7 +50,7 @@ include 'include/headerr.php';
                     </a>
                 </li>
                 <li class="breadcrumb-item font_size active" aria-current="page">Services</li>
-                <li class="breadcrumb-item font_size active" aria-current="page">Smalll Scale Industry</li>
+                <li class="breadcrumb-item font_size active" aria-current="page">Small Scale Industry</li>
 
             </ol>
         </nav>
