@@ -57,7 +57,7 @@
                 <div class="col-md-12">
                     <ul class="footer_link ">
                         <li class="font_size"><a class="font_size" href="index.php">Home</a></li>
-                        <li class="font_size"><a class="font_size" href="about.php">About</a></li>
+                        <li class="font_size"><a class="font_size" href="about.php">About Us</a></li>
                         <li class="font_size"><a class="font_size" href="service.php">Services</a></li>
                         <!-- <li class="font_size"><a class="font_size" href="blog_details_agriculture.php">Blogs</a></li> -->
                         <!-- <li class="font_size"><a class="font_size" href="contactmin.php">Contact Us</a></li> -->
@@ -68,7 +68,7 @@
                         <li class="font_size"><a class="font_size" href="terms.php">Terms & Conditions</a></li>
                         <li class="font_size"><a class="font_size" href="media.php">Media</a></li>
                         <!-- <li class="font_size"><a class="font_size" href="news.php">E-News</a></li> -->
-                        <li class="font_size"><a class="font_size" href="contactmin.php">Contact</a></li>
+                        <li class="font_size"><a class="font_size" href="contactmin.php">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
