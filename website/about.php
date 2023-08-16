@@ -1,9 +1,5 @@
 <?php include "include/headerr.php" ?>
 
-<div class="stricky-header stricked-menu main-menu">
-    <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
-</div><!-- /.stricky-header -->
-
 <section class="content">
     <div class="banner_slider banner_slider_one">
         <div class="swiper mySwiper">
@@ -42,7 +38,7 @@
         </div>
 
         <!--About Three Start -->
-        <section class="about-three">
+        <section class="">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
