@@ -69,8 +69,8 @@ include 'include/headerr.php';
             <img src="assets/img/about/baag.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Agriculture</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited is start the agriculture work in all over up. With this work Farmer
+                 can grow our income. Company provide advance tools for cultivating</p>
             </div>
             <div class="card-footer">
               <small class="text-muted text-center"><a href="div-agriculture.php">Click here</a></small>
@@ -82,7 +82,8 @@ include 'include/headerr.php';
             <img src="assets/img/about/silai.jfif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Small Scale Industry</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited is start the Self your help Concept work. The company
+                 start Home base work for Female and ciniour citizen by which they can earn some income for better Future.</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="div-ssindustry.php">Click here</a></small>
@@ -94,8 +95,7 @@ include 'include/headerr.php';
             <img src="assets/img/about/bakri.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Animal Husbandry</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited Compandy now start the Technichal Farming with animals and animal farming with the farmer. This is very nice and smart field for all the farmer.</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="div-animalhusbandry.php">Click here</a></small>
@@ -107,8 +107,7 @@ include 'include/headerr.php';
             <img src="assets/images/resources/beekeeping1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Beekeeping</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited is multi sector farming Company which provide the bee keeping for the farmer by which farmer can erar more income from the production of Hony.</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="div-bee.php">Click here</a></small>
@@ -120,8 +119,7 @@ include 'include/headerr.php';
             <img src="assets/img/about/egg.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Egg Hechari</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited is planing to Bird Egg Hechary By which Farmer who not wants to work in dust and water they can start this type of work. With this Hechary Farmer can earn more income.</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="div-egghechari.php">Click here</a></small>
@@ -133,8 +131,7 @@ include 'include/headerr.php';
             <img src="assets/images/resources/medical.jfif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Medical</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited Provide Medical Facility to register farmer who is register with comapny the can get the emergency Service by Doctor team for Animals and other Agriculture activity</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="div-medical.php">Click here</a></small>

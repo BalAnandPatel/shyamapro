@@ -72,8 +72,8 @@ include 'include/headerr.php';
             <img src="assets/img/about/baag1.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Agriculture</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited is start the agriculture work in all over up. With this work Farmer
+                 can grow our income. Company provide advance tools for cultivating</p>
             </div>
             <div class="card-footer">
               <small class="text-muted text-center"><a href="ser-agriculture.php">Click here</a></small>
@@ -85,7 +85,8 @@ include 'include/headerr.php';
             <img src="assets/img/about/egg.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Small Scale Industry</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited is start the Self your help Concept work. The company
+                 start Home base work for Female and ciniour citizen by which they can earn some income for better Future.</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="ser-ssindustry.php">Click here</a></small>
@@ -97,8 +98,8 @@ include 'include/headerr.php';
             <img src="assets/img/about/duckfarm.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Animal Husbandry</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited Compandy now start the Technichal
+                 Farming with animals and animal farming with the farmer. This is very nice and smart field for all the farmer.</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="ser-animalhusbandry.php">Click here</a></small>
@@ -110,8 +111,7 @@ include 'include/headerr.php';
             <img src="assets/img/about/sital.jfif" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Education</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">We Provide the training for Farmer and Small Scall Industry. By The Training Farmer can Grow our income.</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="ser-education.php">Click here</a></small>
