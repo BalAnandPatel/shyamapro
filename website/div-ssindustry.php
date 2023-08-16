@@ -261,7 +261,7 @@ include 'include/headerr.php';
 
             <ul>
 
-                <li class="breadcrumb-item font_size active" aria-current="page">Publish Date :12-12-2022</li>
+                <!-- <li class="breadcrumb-item font_size active" aria-current="page">Publish Date :12-12-2022</li> -->
 
             </ul>
         </div>
