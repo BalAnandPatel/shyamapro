@@ -95,7 +95,8 @@ include 'include/headerr.php';
             <img src="assets/img/about/bakri.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Animal Husbandry</h5>
-              <p class="card-text">Shyamavsvss Krishi Limited Compandy now start the Technichal Farming with animals and animal farming with the farmer. This is very nice and smart field for all the farmer.</p>
+              <p class="card-text">Shyamavsvss Krishi Limited Compandy now start the Technichal
+                 Farming with animals and animal farming with the farmer. This is very nice and smart field for all the farmer.</p>
             </div>
             <div class="card-footer">
               <small class="text-muted"><a href="div-animalhusbandry.php">Click here</a></small>

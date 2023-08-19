@@ -357,7 +357,7 @@ function giplCurl($api,$postdata){
               <div class="input-group-text">
                 <span class="fas fa-map-pin"></span>
               </div>
-               <input type="text" minlength="6" maxlength="6" class="form-control"  placeholder="Pincode"  name="pincode"  value="<?php echo $value1->pincode ?>" autocomplete="off" required>                  
+               <input type="text" class="form-control" minlength="6" maxlength="6"  placeholder="Pincode"  name="pincode"  value="<?php echo $value1->pincode ?>" autocomplete="off" required>                  
 
              
             </div>

@@ -177,7 +177,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
                 <span class="fas fa-user"></span>
               </div>
               <select class="form-control" name="gender" required>
-         <option class="form-control" value="0">Please Select Gender</option>
+         <option class="form-control" value="">Please Select Gender</option>
              <option class="form-control" value="Male">Male</option>
              <option class="form-control" value="Female">Female</option>
              <option class="form-control" value="Other">Other</option>
@@ -201,7 +201,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               </div>
 
               <select class="form-control" name="marital_status" required>
-         <option class="form-control" value="0">Please Select Marital Status</option>
+         <option class="form-control" value="">Please Select Marital Status</option>
          <option class="form-control" value="Married">Married</option>
              <option class="form-control" value="Unmarried">Unmarried</option>
                      </select>
@@ -395,7 +395,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               </div>
               <!-- <input type="text" class="form-control" placeholder="State" name="state" autocomplete="off" required  data-toggle="tooltip" title="Please Enter District Name">          -->
               <select class="form-control" name="state" required>
-                <option value="0" selected disabled>Please Select State</option>
+                <option value="" selected disabled>Please Select State</option>
                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -447,7 +447,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               <!-- <input type="text" class="form-control" placeholder="Category" name="category" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Category Name">          -->
           
               <select class="form-control" name="category" required>
-                <option class="form-control" value="0">Please Select Category</option>
+                <option class="form-control" value="">Please Select Category</option>
                 <option class="form-control" value="General">General</option>
                 <option class="form-control" value="OBC">OBC</option>
                 <option class="form-control" value="SC">SC</option>
@@ -471,7 +471,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               </div>
               <!-- <input type="text" class="form-control" placeholder="Religion" name="religion" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Religion">          -->
               <select class="form-control" name="religion" required>
-                <option class="form-control" value="0">Please Select Religion</option>
+                <option class="form-control" value="">Please Select Religion</option>
                 <option class="form-control" value="Hindu">Hindu</option>
                 <option class="form-control" value="Muslim">Muslim</option>
                 <option class="form-control" value="Sikh">Sikh</option>
@@ -526,7 +526,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               <span class="fas fa-boxes"></span>
             </div>
          <select class="form-control" name="h_qualification" required>
-            <option class="form-control" value="0">Please select highest qualification</option>
+            <option class="form-control" value="">Please select highest qualification</option>
             <option class="form-control" value="Ph.D">Ph.D</option>
             <option class="form-control" value="Diploma">Diploma</option>
             <option class="form-control" value="Post Graduation">Post Graduation</option>
