@@ -63,7 +63,11 @@
                     <th>S.N</th>
                     <th>Post_Name</th>
                     <th>Type</th>
-                    <th>Amount</th>
+                    <th>Fee Gen</th>
+                    <th>Fee OBC</th>
+                    <th>Fee SC</th>
+                    <th>Fee ST</th>
+                    <th>Fee EWS</th>
                     <th>Age</th>
                     <th>Total Post</th>
                     <th>Status</th>
@@ -85,11 +89,15 @@
                      
                   ?>  
                   <tr>
-                    <td><?php echo ++$counter ?></td>
-                    <td><?php echo $value1->exam_name ?></td>
+                    <td><?php echo ++$counter; ?></td>
+                    <td><?php echo $value1->exam_name; ?></td>
                                      
-                    <td><?php echo $value1->type?></td>
-                    <td><?php echo $value1->amount ?></td>
+                    <td><?php echo $value1->type; ?></td>
+                    <td><?php echo $value1->general_fee; ?></td>
+                    <td><?php echo $value1->obc_fee; ?></td>
+                    <td><?php echo $value1->sc_fee; ?></td>
+                    <td><?php echo $value1->st_fee; ?></td>
+                    <td><?php echo $value1->ews_fee; ?></td>
                     <td><?php echo $value1->age; ?></td>
                     <td><?php echo $value1->total_post; ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "DISABLEDA"; ?></td>

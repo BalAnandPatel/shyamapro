@@ -1,15 +1,15 @@
 <?php
 include '../constant.php';
 error_reporting(0);
-$full_name=$_SESSION['full_name'];
-$registration_no=$_SESSION['registration_no'];
-$exam_name=$_SESSION['exam_name'];
-$transaction_id=$_SESSION['transaction_id'];
+// $full_name=$_SESSION['full_name'];
+// $registration_no=$_SESSION['registration_no'];
+// $exam_name=$_SESSION['exam_name'];
+// $transaction_id=$_SESSION['transaction_id'];
 
-// $full_name="MRITYUNJAY SINGH";
-// $registration_no="1259644686";
-// $exam_name="TEST";
-// $transaction_id="x0Zrw_8101875477";
+$full_name="MRITYUNJAY SINGH";
+$registration_no="1175211357";
+$exam_name="UPPCS";
+$transaction_id="x0Zrw_8101875477";
 
 
 $url = $URL."payment/confirm_payment.php";

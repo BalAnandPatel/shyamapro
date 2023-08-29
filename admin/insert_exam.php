@@ -52,7 +52,7 @@
         <?php echo $_SESSION["exam_post_faild"]; unset($_SESSION["exam_post_faild"]); ?>
       </div>
       <?php } ?>
-      <form action="action/insert_exam_post.php" method="post" enctype="multipart/form-data">
+     <form action="action/insert_exam_post.php" method="post" enctype="multipart/form-data">
       <div class="container-fluid">
 
   <div class="row">
@@ -63,10 +63,7 @@
   <label for="input">Post Name </label>
 
           <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
-              <input type="text" class="form-control" placeholder="Post Name" name="exam_name" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
+              <input type="text" class="form-control" placeholder="Post Name" id="postName" name="exam_name" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
           
           </div>
           <small id="emailHelp" class="form-text text-muted">Post Name can not be same.</small>
@@ -78,9 +75,6 @@
   <label for="input">Post Type</label>
 
           <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
               <input type="text" class="form-control" placeholder="Post Type" name="type" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
           
           </div>
@@ -89,28 +83,66 @@
             </div>
  
   <div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+     <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                <div class="form-group">
-  <label for="input">Post Amount</label>
-
-          <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
-              <input type="text" class="form-control" placeholder="Post Amount" name="amount" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
-          
+                 <label for="input">General Fee </label>
+       <div class="input-group mb-3">
+         <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">General Fee</span>
+          </div>
+            <input type="text" class="form-control" name="general_fee" placeholder="Amount" autocomplete="off" required>
           </div>
           </div>
             </div>
-          
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                <div class="form-group">
-  <label for="input">Age</label>
+           <label for="input">OBC Fee </label>
+       <div class="input-group mb-3">
+         <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">OBC Fee</span>
+          </div>
+            <input type="text" class="form-control" name="obc_fee" placeholder="Amount" autocomplete="off" required>
+          </div>
+          </div>
+            </div>
+             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+               <div class="form-group">
+     <label for="input">SC Fee </label>
+       <div class="input-group mb-3">
+         <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">SC Fee</span>
+          </div>
+            <input type="text" class="form-control" name="sc_fee" placeholder="Amount" autocomplete="off" required>
+          </div>
+          </div>
+            </div>
+             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+               <div class="form-group">
+   <label for="input">ST Fee</label>
+       <div class="input-group mb-3">
+         <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">ST Fee</span>
+          </div>
+            <input type="text" class="form-control" name="st_fee" placeholder="Amount" autocomplete="off" required>
+          </div>
+          </div>
+            </div>
+             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+               <div class="form-group">
+   <label for="input">EWS Fee</label>
 
-          <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
+       <div class="input-group mb-3">
+         <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">EWS Fee</span>
+          </div>
+            <input type="text" class="form-control" name="ews_fee" placeholder="Amount" autocomplete="off" required>
+          </div>
+          </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+               <div class="form-group">
+                <label for="input">Age</label>
+             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Age" name="age" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
           
           </div>
@@ -124,9 +156,7 @@
   <label for="input">Eligibility</label>
 
           <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
+             
               <input type="text" class="form-control" placeholder="Exam Eligibility" name="eligibility" autocomplete="off" required  data-toggle="tooltip">         
           
           </div>
@@ -138,9 +168,7 @@
   <label for="input">Total Post</label>
 
           <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
+          
               <input type="text" class="form-control" placeholder="Total Post" name="total_post" autocomplete="off" required  data-toggle="tooltip">         
           
           </div>
@@ -156,9 +184,7 @@
   <label for="input">Exam Start Date </label>
 
           <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
+              
             <input type="date" placeholder="dd-mm-yyyy" class="form-control" name="exam_date_start" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
@@ -170,9 +196,7 @@
   <label for="input">Exam End date </label>
 
           <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
+            
             <input type="date" placeholder="dd-mm-yyyy" class="form-control" name="exam_date_end" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
@@ -188,9 +212,7 @@
   <label for="input">Admit Card Release Date </label>
 
           <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
+              
             <input type="date" class="form-control" placeholder="Admit Card Release Date" name="admit_card_date" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
@@ -202,9 +224,7 @@
   <label for="input">Result Release Date</label>
 
           <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
+             
             <input type="date" class="form-control" placeholder="Result Release Date" name="result_date" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
@@ -221,7 +241,6 @@
         </div>
       </div>
       </form>
-
     <!-- /.form-box -->
   </div><!-- /.card -->
 </div>

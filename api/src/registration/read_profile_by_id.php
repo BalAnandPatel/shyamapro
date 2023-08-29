@@ -41,8 +41,8 @@ if($num>0){
   
         $reg_item=array(
 
-            "id" => $id,
-       "full_name"=>$full_name,
+    "id" => $id,
+    "full_name"=>$full_name,
     "mother_name"=>$mother_name,
     "father_name"=>$father_name,
     "spouse_name"=>$spouse_name,

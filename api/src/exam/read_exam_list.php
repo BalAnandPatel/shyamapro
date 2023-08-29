@@ -40,7 +40,11 @@ if($num>0){
 
             "id" => $id,
             "exam_name"=>$exam_name,
-            "amount"=>$amount,
+            "general_fee"=>$general_fee,
+            "obc_fee"=>$obc_fee,
+            "sc_fee"=>$sc_fee,
+            "st_fee"=>$st_fee,
+            "ews_fee"=>$ews_fee,
             "type"=>$type,
             "eligibility"=>$eligibility,
             "age"=>$age,

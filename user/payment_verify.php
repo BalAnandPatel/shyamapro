@@ -1,25 +1,23 @@
 <?php
 include '../constant.php';  
-error_reporting(0);
+// error_reporting(0);
 $mobile = $_POST["mobile"];
 $registration_no = $_POST["registration_no"];
-//$date=$_POST["dob"];
-//$dob=date('d/m/Y',strtotime($date));
 
 $url = $URL . "exam/read_payment_varify_details.php";
 
-$data = array("registration_no" => $registration_no, "mobile" => $mobile);
+$data = array("registration_no"=>$registration_no, "mobile"=>$mobile);
 //print_r($data);
 $postdata1 = json_encode($data);
 $results = giplCurl($url, $postdata1);
-//print_r($results);
+// print_r($results);
 
-if ($results->message=="payment not verified") {
+if (isset($results->message) && $results->message=="payment not verified") {
   // echo "Request failed";
   $_SESSION['find_reg_error'] = "Record not matched.";
 //   header('location:../website/rrecruitment.php');
-  exit();
-} else {
+exit();  
+}else{
 
   $id = $results->records[0]->id;
 
@@ -38,7 +36,6 @@ function giplCurl($api, $postdata)
   // print_r($response);
   return  json_decode($response);
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -93,8 +90,27 @@ function giplCurl($api, $postdata)
 
           <div class="container-fluid">
 
+        <?php
+        $category="";
+        if(isset($results->records[0]->category)){
+          $category=$results->records[0]->category;
+        }
+        // category wize application fee
+        if($category=="General"){
+         $amount=$results->records[0]->general_fee;
+        }else if($category=="OBC"){
+         $amount=$results->records[0]->obc_fee;
+        }else if($category=="SC"){
+         $amount=$results->records[0]->sc_fee;
+        }else if($category=="ST"){
+         $amount=$results->records[0]->st_fee;
+        }else if($category=="EWS"){
+         $amount=$results->records[0]->ews_fee;
+        }
+        ?>
+
             <p> Dear <b><?php echo $results->records[0]->full_name;  ?></b>, Thank you for the registration for examination : <b><?php echo $results->records[0]->exam_name; ?></b>. Your Registration Number is :<b> <?php echo $results->records[0]->registration_no; ?></b></p>
-            <p>Your Registration Amount for examination :<b> <?php echo $results->records[0]->exam_name; ?></b> is<b> &#8377;<?php echo $results->records[0]->amount; ?></b> only. </p>
+            <p>Your Registration Amount for examination :<b> <?php echo $results->records[0]->exam_name; ?></b> is<b> &#8377;<?php echo $amount; ?></b> only. </p>
 
             <h1>Instructions:</h1>
             <ul>
@@ -137,7 +153,7 @@ function giplCurl($api, $postdata)
                        0, 5)."_".$registration_no ?>" readonly>
                 <input type="hidden" name="merchant_id" value="2545757"> 
     <input type="hidden" name="language" value="EN"> 
-    <input type="hidden" name="amount" value="<?php echo $results->records[0]->amount; ?>">
+    <input type="hidden" name="amount" value="<?php echo $amount; ?>">
     <input type="hidden" name="currency" value="INR"> 
     <input type="hidden" name="redirect_url" value="https://www.krishilimited.com/payment/ccavResponseHandler.php"> 
     <input type="hidden" name="cancel_url" value="https://www.krishilimited.com/payment/cancel.php"> 

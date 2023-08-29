@@ -646,6 +646,7 @@ function giplCurl($api,$postdata){
 
                 <input type="hidden" name="exam_name" value="<?php echo $value1->exam_name; ?>">
                 <input type="hidden" name="mobile" value="<?php echo $value1->mobile; ?>">
+                <input type="hidden" name="category" value="<?php echo $value1->category; ?>">
             <button type="submit" class="btn btn-success btn-block">Confirm & Pay</button>
           </form>
           </div>

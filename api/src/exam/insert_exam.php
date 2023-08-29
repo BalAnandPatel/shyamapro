@@ -24,12 +24,16 @@ $data = json_decode(file_get_contents("php://input"));
 if(
     
     !empty($data->exam_name) &&
-    !empty($data->amount)
+    !empty($data->general_fee)
 )
 
 {
     $exam->exam_name = $data->exam_name;
-    $exam->amount = $data->amount;
+    $exam->general_fee = $data->general_fee;
+    $exam->obc_fee = $data->obc_fee;
+    $exam->sc_fee = $data->sc_fee;
+    $exam->st_fee = $data->st_fee;
+    $exam->ews_fee = $data->ews_fee;
     $exam->type = $data->type;
     $exam->eligibility = $data->eligibility;
     $exam->exam_date_start = $data->exam_date_start;

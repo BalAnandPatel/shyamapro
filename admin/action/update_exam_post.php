@@ -7,7 +7,11 @@ if(isset($_POST["update_exam"])){
  $id=$_POST["id"];
  $exam_name=strtoupper($_POST["exam_name"]);
  $type=ucfirst($_POST["type"]);
- $amount=$_POST["amount"];
+ $general_fee=$_POST["general_fee"];
+ $obc_fee=$_POST["obc_fee"];
+ $sc_fee=$_POST["sc_fee"];
+ $st_fee=$_POST["st_fee"];
+ $ews_fee=$_POST["ews_fee"];
  $eligibility=ucfirst($_POST["eligibility"]);
  $total_post=$_POST["total_post"];
  $age=$_POST["age"];
@@ -20,7 +24,7 @@ if(isset($_POST["update_exam"])){
  $updated_by="Admin";
  $url = $URL . "exam/update_exam.php";
 
- $data = array("id"=>$id, "exam_name"=>$exam_name, "amount"=>$amount, "eligibility"=>$eligibility, 
+ $data = array("id"=>$id, "exam_name"=>$exam_name, "general_fee"=>$general_fee, "obc_fee"=>$obc_fee, "sc_fee"=>$sc_fee, "st_fee"=>$st_fee, "ews_fee"=>$ews_fee, "eligibility"=>$eligibility, 
  "total_post"=>$total_post, "type"=>$type, "age"=>$age, "exam_date_start"=>$exam_date_start,
  "admit_card_date"=>$admit_card_date, "result_date"=>$result_date, "status"=>"1", "updated_by"=>"Admin",
  "exam_date_end"=>$exam_date_end, "status"=>$status, "updated_on"=>$updated_on, "updated_by"=>$updated_by);

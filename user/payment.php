@@ -6,6 +6,7 @@ $mobile=$_POST["mobile"];
 $registration_no=$_POST["registration_no"];
 $full_name=$_POST["full_name"];
 $id=$_POST["id"];
+$category=$_POST["category"];
 
 // $exam_name="TEST";
 // $mobile="1234567891";
@@ -42,13 +43,13 @@ $results_reg=giplCurl($url_reg,$postdata2);
 
 
 function giplCurl($api,$postdata){
-    $url = $api; 
+      $url = $api; 
       $client = curl_init($url);
       curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
       curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
       $response = curl_exec($client);
-    // return print_r($response);
-      return  json_decode($response);
+      //print_r($response);
+      return $result = json_decode($response);
   }
 
 ?>
@@ -127,9 +128,23 @@ function giplCurl($api,$postdata){
 
             
       <div class="container-fluid">
+        <?php
+        // category wize application fee
+        if($category=="General"){
+         $amount=$results->records[0]->general_fee;
+        }else if($category=="OBC"){
+         $amount=$results->records[0]->obc_fee;
+        }else if($category=="SC"){
+         $amount=$results->records[0]->sc_fee;
+        }else if($category=="ST"){
+         $amount=$results->records[0]->st_fee;
+        }else if($category=="EWS"){
+         $amount=$results->records[0]->ews_fee;
+        }
+        ?>
    
-      <p> Dear <b><?php echo $full_name  ?></b>, Thank you for the registration for examination : <b><?php echo $exam_name ?></b>. Your Registration Number is :<b> <?php echo $registration_no; ?></b></p>
-<p>Your Registration Amount for examination :<b> <?php echo $exam_name ?></b> is<b> &#8377;<?php echo $results->records[0]->amount ?></b> only.  </p>
+      <p> Dear <b><?php echo $full_name  ?></b>, Thank you for the registration for examination : <b><?php echo $exam_name; ?></b>. Your Registration Number is :<b> <?php echo $registration_no; ?></b></p>
+<p>Your Registration Amount for examination :<b> <?php echo $exam_name; ?></b> is<b> &#8377;<?php echo $amount; ?></b> only.  </p>
 
                       
 
@@ -172,7 +187,7 @@ After successful payment, the student can download the registration receipt.
                        0, 5)."_".$registration_no ?>" readonly>
             <input type="hidden" name="merchant_id" value="2545757"> 
     <input type="hidden" name="language" value="EN"> 
-    <input type="hidden" name="amount" value="<?php echo $results->records[0]->amount; ?>">
+    <input type="hidden" name="amount" value="<?php echo $amount; ?>">
     <input type="hidden" name="currency" value="INR"> 
     <input type="hidden" name="redirect_url" value="https://www.krishilimited.com/payment/ccavResponseHandler.php"> 
     <input type="hidden" name="cancel_url" value="https://www.krishilimited.com/payment/cancel.php"> 

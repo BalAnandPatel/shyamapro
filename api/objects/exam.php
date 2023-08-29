@@ -9,7 +9,7 @@
         $this->conn = $db;
     }
 
-    public $id,$full_name,$registration_no,$dob,$mobile,$exam_name,$type,$age,$total_post,$amount,$eligibility,$status,$exam_date_start,$exam_date_end,$result_date,$admit_card_date,$created_by,$created_on,$updated_on,$updated_by;
+    public $id,$full_name,$registration_no,$dob,$mobile,$exam_name,$type,$age,$total_post,$amount,$general_fee,$obc_fee,$sc_fee,$st_fee,$ews_fee,$eligibility,$status,$exam_date_start,$exam_date_end,$result_date,$admit_card_date,$created_by,$created_on,$updated_on,$updated_by;
    public $tracking_id,$order_id,$bank_ref_no,$order_status,$failure_message,$payment_mode,$card_name,$status_code,$billing_tel,$billing_email,
     $vault,$offer_type,$offer_code,$eci_value,$retry,$response_code,$billing_notes,$trans_date;
     
@@ -30,7 +30,7 @@
     }
 
     public function read_exam_details(){
-        $query="Select  id, exam_name, type, age, total_post, eligibility, amount, status, exam_date_start, exam_date_end, result_date, admit_card_date, created_by, created_on
+        $query="Select  id, exam_name, type, age, total_post, eligibility, general_fee,obc_fee,sc_fee,st_fee,ews_fee, status, exam_date_start, exam_date_end, result_date, admit_card_date, created_by, created_on
         from " .$this->table_name . " where exam_name=:exam_name";
         $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(":exam_name", $this->exam_name);
@@ -40,7 +40,7 @@
     }
 
      public function read_payment_varify_details(){
-      $query="Select  reg.id,reg.full_name,reg.registration_no,dob,mobile,reg.email,reg.exam_name,amount,reg.address1,reg.address2,reg.address3,reg.pincode,reg.nationality,reg.state,reg.status,
+      $query="Select  reg.id,reg.full_name,reg.category,reg.registration_no,dob,mobile,reg.email,reg.exam_name,general_fee,obc_fee,sc_fee,st_fee,ews_fee,reg.address1,reg.address2,reg.address3,reg.pincode,reg.nationality,reg.state,reg.status,
         reg.created_on, reg.created_by from " .$this->table_registration . " as reg left join "
          . $this->table_name . " as exam on reg.exam_name=exam.exam_name where reg.registration_no=:registration_no and reg.mobile=:mobile";
         $stmt = $this->conn->prepare($query); 
@@ -84,8 +84,7 @@
     }
 
     public function read_exam_list(){
-        $query="Select  id,exam_name,type,age,total_post,eligibility,
-         amount,status,exam_date_start,exam_date_end,result_date,admit_card_date,created_by,created_on
+        $query="Select id,exam_name,type,age,total_post,eligibility,general_fee,obc_fee,sc_fee,st_fee,ews_fee,status,exam_date_start,exam_date_end,result_date,admit_card_date,created_by,created_on
         from " .$this->table_name;
         $stmt = $this->conn->prepare($query); 
         $stmt->execute();
@@ -99,7 +98,11 @@
     SET
              exam_name=:exam_name,
              type=:type,
-             amount=:amount, 
+             general_fee=:general_fee, 
+             obc_fee=:obc_fee, 
+             sc_fee=:sc_fee, 
+             st_fee=:st_fee, 
+             ews_fee=:ews_fee, 
              eligibility=:eligibility,
              age=:age,
              total_post=:total_post,
@@ -115,7 +118,11 @@
         $stmt = $this->conn->prepare($query);
         $this->exam_name=htmlspecialchars(strip_tags($this->exam_name));
         $this->type=htmlspecialchars(strip_tags($this->type));
-        $this->amount=htmlspecialchars(strip_tags($this->amount));
+        $this->general_fee=htmlspecialchars(strip_tags($this->general_fee));
+        $this->obc_fee=htmlspecialchars(strip_tags($this->obc_fee));
+        $this->sc_fee=htmlspecialchars(strip_tags($this->sc_fee));
+        $this->st_fee=htmlspecialchars(strip_tags($this->st_fee));
+        $this->ews_fee=htmlspecialchars(strip_tags($this->ews_fee));
         $this->age=htmlspecialchars(strip_tags($this->age));
         $this->total_post=htmlspecialchars(strip_tags($this->total_post));
         $this->eligibility=htmlspecialchars(strip_tags($this->eligibility));
@@ -130,7 +137,11 @@
 
         $stmt->bindParam(":exam_name", $this->exam_name);
         $stmt->bindParam(":type", $this->type);
-        $stmt->bindParam(":amount", $this->amount);
+        $stmt->bindParam(":general_fee", $this->general_fee);
+        $stmt->bindParam(":obc_fee", $this->obc_fee);
+        $stmt->bindParam(":sc_fee", $this->sc_fee);
+        $stmt->bindParam(":st_fee", $this->st_fee);
+        $stmt->bindParam(":ews_fee", $this->ews_fee);
         $stmt->bindParam(":age", $this->age);
         $stmt->bindParam(":total_post", $this->total_post);
         $stmt->bindParam(":eligibility", $this->eligibility);
@@ -160,7 +171,11 @@
                 SET
                    exam_name=:exam_name,
                    type=:type,
-                   amount=:amount, 
+                   general_fee=:general_fee, 
+                   obc_fee=:obc_fee, 
+                   sc_fee=:sc_fee, 
+                   st_fee=:st_fee, 
+                   ews_fee=:ews_fee, 
                    eligibility=:eligibility,
                    age=:age,
                    total_post=:total_post,
@@ -177,7 +192,11 @@
         $stmt = $this->conn->prepare($query);
         $this->exam_name=htmlspecialchars(strip_tags($this->exam_name));
         $this->type=htmlspecialchars(strip_tags($this->type));
-        $this->amount=htmlspecialchars(strip_tags($this->amount));
+        $this->general_fee=htmlspecialchars(strip_tags($this->general_fee));
+        $this->obc_fee=htmlspecialchars(strip_tags($this->obc_fee));
+        $this->sc_fee=htmlspecialchars(strip_tags($this->sc_fee));
+        $this->st_fee=htmlspecialchars(strip_tags($this->st_fee));
+        $this->ews_fee=htmlspecialchars(strip_tags($this->ews_fee));
         $this->age=htmlspecialchars(strip_tags($this->age));
         $this->total_post=htmlspecialchars(strip_tags($this->total_post));
         $this->eligibility=htmlspecialchars(strip_tags($this->eligibility));
@@ -194,7 +213,11 @@
         $stmt->bindParam(":id", $this->id);
         $stmt->bindParam(":exam_name", $this->exam_name);
         $stmt->bindParam(":type", $this->type);
-        $stmt->bindParam(":amount", $this->amount);
+        $stmt->bindParam(":general_fee", $this->general_fee);
+        $stmt->bindParam(":obc_fee", $this->obc_fee);
+        $stmt->bindParam(":sc_fee", $this->sc_fee);
+        $stmt->bindParam(":st_fee", $this->st_fee);
+        $stmt->bindParam(":ews_fee", $this->ews_fee);
         $stmt->bindParam(":age", $this->age);
         $stmt->bindParam(":total_post", $this->total_post);
         $stmt->bindParam(":eligibility", $this->eligibility);

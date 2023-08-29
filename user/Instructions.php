@@ -83,7 +83,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                    <tr>
                      <th scope="col">POST NAME</th>
                      <th scope="col">POST ELIGIBILITY</th>
-                     <th scope="col">APPLICATION FEE</th>
+                     <th scope="col">TOTAl POST</th>
                      <th scope="col">AGE</th>
                      <th scope="col">START DATE</th>
                     </tr>
@@ -100,7 +100,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td><?php  echo $value1->exam_name; ?></td>
     
                       <td><?php  echo $value1->eligibility; ?></td>
-                      <td><?php  echo $value1->amount; ?></td>
+                      <td><?php  echo $value1->total_post; ?></td>
                       <td><?php  echo $value1->age; ?></td>
                       <td>
                         <?php 
@@ -108,6 +108,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
                          echo $date=="01-01-1970" ? '0' : $date; 
                         ?>
                       </td>
+                    </tr>
+                  <?php  } } ?>
+                  </tbody>
+                </table>
+              </div>
+              <h5 class="card-title mb-2"><b>Application Fee Details</b></h5>
+               <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                   <tr>
+                     <th scope="col">POST NAME</th>
+                     <th scope="col">GENERAL</th>
+                     <th scope="col">OBC</th>
+                     <th scope="col">SC</th>
+                     <th scope="col">ST</th>
+                     <th scope="col">EWS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php 
+                     
+                     foreach($result as $key => $value){
+                     foreach($value as $key1 => $value1)
+                     {
+                     
+                    ?>  
+                    <tr>
+                      <td><?php  echo $value1->exam_name; ?></td>
+    
+                      <td><?php  echo $value1->general_fee; ?>/-</td>
+                      <td><?php  echo $value1->obc_fee; ?>/-</td>
+                      <td><?php  echo $value1->sc_fee; ?>/-</td>
+                      <td><?php  echo $value1->st_fee; ?>/-</td>
+                      <td><?php  echo $value1->ews_fee; ?>/-</td>
                     </tr>
                   <?php  } } ?>
                   </tbody>

@@ -10,7 +10,7 @@ if(isset($_POST['transaction_id'])){
   $data = array("id" => $id);
   $postdata1 = json_encode($data);
   $result = giplCurl($url, $postdata1);
-//   print_r($result);
+  //print_r($result);
   
   $img = "img/" . $id . "/profile" . "/" . $id . ".png";
   $img_thumb = "img/" . $id . "/profile" . "/" . $id . "_thumb" . ".png";
@@ -38,7 +38,18 @@ $data_exam = array("exam_name" => $result->records[0]->exam_name);
 $postdata = json_encode($data_exam);
 $result_exam = giplCurl($url_exam, $postdata);
 //print_r($result_exam);
-$amount = $result_exam->records[0]->amount;
+if($result->records[0]->category=="General"){
+$amount = $result_exam->records[0]->general_fee;
+}else if($result->records[0]->category=="OBC"){
+$amount = $result_exam->records[0]->obc_fee;
+}else if($result->records[0]->category=="SC"){
+$amount = $result_exam->records[0]->sc_fee;
+}else if($result->records[0]->category=="ST"){
+$amount = $result_exam->records[0]->st_fee;
+}else if($result->records[0]->category=="EWS"){
+$amount = $result_exam->records[0]->ews_fee;
+}
+
 
 $url_payment = $URL . "payment/read_payment_details.php";
 $data_payment = array("transaction_id"=>$transaction_id);

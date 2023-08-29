@@ -25,7 +25,11 @@ if(
 
     !empty($data->exam_name) &&     
     !empty($data->type) &&
-    !empty($data->amount) &&
+    !empty($data->general_fee) &&
+    !empty($data->obc_fee) &&
+    !empty($data->sc_fee) &&
+    !empty($data->st_fee) &&
+    !empty($data->ews_fee) &&
     !empty($data->eligibility) &&
     !empty($data->total_post) &&
     !empty($data->age) &&
@@ -39,7 +43,11 @@ if(
     $exam->id=$data->id;
     $exam->exam_name=$data->exam_name;
     $exam->type = $data->type;
-    $exam->amount = $data->amount;
+    $exam->general_fee = $data->general_fee;
+    $exam->obc_fee = $data->obc_fee;
+    $exam->sc_fee = $data->sc_fee;
+    $exam->st_fee = $data->st_fee;
+    $exam->ews_fee = $data->ews_fee;
     $exam->eligibility = $data->eligibility;
     $exam->total_post = $data->total_post;
     $exam->age = $data->age;

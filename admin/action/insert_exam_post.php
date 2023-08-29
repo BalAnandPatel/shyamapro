@@ -5,7 +5,11 @@ if(isset($_POST["exam_name"])){
 
  $exam_name=strtoupper($_POST["exam_name"]);
  $type=ucfirst($_POST["type"]);
- $amount=$_POST["amount"];
+ $general_fee=$_POST["general_fee"];
+ $obc_fee=$_POST["obc_fee"];
+ $sc_fee=$_POST["sc_fee"];
+ $st_fee=$_POST["st_fee"];
+ $ews_fee=$_POST["ews_fee"];
  $eligibility=ucfirst($_POST["eligibility"]);
  $total_post=$_POST["total_post"];
  $age=$_POST["age"];
@@ -28,7 +32,7 @@ if(isset($_POST["exam_name"])){
   if($read_exam_result->message="No exam name found" && $text!='0'){
 
 // echo "Not Matchd";
-$data = array("exam_name"=>$exam_name,"amount"=>$amount, "eligibility"=>$eligibility, 
+$data = array("exam_name"=>$exam_name,"general_fee"=>$general_fee, "obc_fee"=>$obc_fee, "sc_fee"=>$sc_fee, "st_fee"=>$st_fee, "ews_fee"=>$ews_fee, "eligibility"=>$eligibility, 
 "total_post"=>$total_post, "type"=>$type, "age"=>$age, "exam_date_start"=>$exam_date_start,
 "admit_card_date"=>$admit_card_date, "result_date"=>$result_date, "status"=>"1", "created_by"=>"Admin",
 "exam_date_end"=>$exam_date_end, "created_on"=>$created_on);
@@ -45,7 +49,7 @@ $result=url_encode_Decode($url,$postdata);
  header('Location:../insert_exam.php');
  } 
   }else{
- $msg="Exam name can not be same.";
+ $msg="Sorry, Post already exists.";
  $_SESSION["exam_post_faild"]=$msg;
  header('location:../insert_exam.php');
   }
