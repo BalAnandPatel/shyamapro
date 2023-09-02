@@ -85,11 +85,11 @@
                         <!-- Designed and Developed by <a href="https://www.glintel.com/">Glintel Technologies</a> -->
 
                         <!-- Visitors: -->
-                        <span id="span_visitor" style="display: flex;justify-content: center;"><br>Visiter Counter: &nbsp;
+                        <!-- <span id="span_visitor" style="display: flex;justify-content: center;"><br>Visiter Counter: &nbsp; -->
                         <!-- <a href='http://www.freevisitorcounters.com'>at Freevisitorcounters.com</a>  -->
                         <!-- <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=44af2b7ca65c7ab709c69636f6003796f46cfbc8'></script> -->
-                        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1028477/t/3"></script>
-                        </span>
+                        <!-- <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1028477/t/3"></script>
+                        </span> -->
 
                     </h6>
 
